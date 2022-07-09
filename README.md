@@ -18,6 +18,8 @@
 
 + Web Browser recomend (Google Chrome || Edge)
 
++ This project use Bootstrap 5 (CSS Framework)
+
 ----------
 
 # Description
