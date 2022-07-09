@@ -1,11 +1,11 @@
 @extends('layouts.base')
 
-@section('title', 'Home')
+@section('title', 'About')
 
 @include('partials.navbar')
 
 @section('content')
 
-    <h2>Welcome the home view</h2>
+    <h2>Welcome the about view</h2>
 
 @endsection

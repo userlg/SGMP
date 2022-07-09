@@ -13,6 +13,8 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
+Route::view('/about', 'about')->name('about');
+
 Route::get('/register', [RegisterController::class, 'show']);
 
 Route::post('/register', [RegisterController::class, 'register']);
