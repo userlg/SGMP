@@ -19,8 +19,9 @@ Route::get('/register', [RegisterController::class, 'show']);
 
 Route::post('/register', [RegisterController::class, 'register']);
 
-Route::get('/login', [LoginController::class, 'show']);
+Route::get('/login', [LoginController::class, 'show'])->name('login');
 
 Route::post('/login', [LoginController::class, 'login']);
 
 Route::get('/dashboard', [AdminController::class, 'show'])->name('dashboard');
+
