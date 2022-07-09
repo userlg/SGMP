@@ -2,7 +2,6 @@
 
 @section('title', 'Home')
 
-@include('partials.navbar')
 
 @section('content')
 

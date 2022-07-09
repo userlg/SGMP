@@ -12,6 +12,8 @@
 
 + Laravel 9
 
++ Nodejs V16 || V18
+
 + Mysql
 
 + Web Browser recomend (Google Chrome || Edge)
@@ -29,14 +31,22 @@
 + Clone the git Repository
 ```
 git clone https://github.com/userlg/SGMP
-````
-+ Install all dependencies
+```
++ Install all dependencies with composer
 ```
 composer install
-````
+```
++ Install all dependencies with npm
+```
+npm install
+```
++ Generate the package and styles
+```
+npm run build
+```
 + Run the project
 ```
 php artisan serve
-````
+```
 
 ### --------------Created by userlg--------------------------
