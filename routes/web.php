@@ -6,12 +6,16 @@ use App\Http\Controllers\AdminController;
 
 use App\Http\Controllers\RegisterController;
 
+use App\Http\Controllers\LogoutController;
+
 use App\Http\Controllers\LoginController;
 
 
 Route::get('/', function () {
     return view('home');
-})->name('home');
+})->name('index');
+
+Route::view('/home', 'home')->name('home');
 
 Route::view('/about', 'about')->name('about');
 
@@ -25,3 +29,4 @@ Route::post('/login', [LoginController::class, 'login']);
 
 Route::get('/dashboard', [AdminController::class, 'show'])->name('dashboard');
 
+Route::get('/logout', [LogoutController::class, 'logout'])->name('logout');

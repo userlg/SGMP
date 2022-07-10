@@ -13,44 +13,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
     </script>
-    <title>SGMP || @yield('title') </title>
-    <nav class="navbar navbar-expand-lg navbar-light sgmp-bg">
-        <div class="container-fluid ">
-            <a class="navbar-brand" href="{{ route('home') }} ">SGMP</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{{ route('home') }}"
-                            data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">Home</a>
-                    </li>
-                    @guest
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}" data-bs-toggle="collapse"
-                                data-bs-target="#navbarNavDropdown">Login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('register') }}" data-bs-toggle="collapse"
-                            data-bs-target="#navbarNavDropdown">Register</a>
-                        </li>
-                    @endguest
-
-                    @auth
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" data-bs-toggle="collapse"
-                            data-bs-target="#navbarNavDropdown">Logout</a>
-                        </li>
-                    @endauth
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('about') }}" data-bs-toggle="collapse"
-                            data-bs-target="#navbarNavDropdown">About</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <title>SGMP || @yield('title') </title> 
 </head>

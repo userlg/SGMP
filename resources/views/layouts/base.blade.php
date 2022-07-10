@@ -4,7 +4,8 @@
 @include('partials.header')
 
 <body>
-    <div class='container'>
+@include('partials.navbar')
+    <div class='main'>
         @yield('content')
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"

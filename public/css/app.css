@@ -10262,3 +10262,9 @@ body {
 .sgmp-bg {
   background-color: #F7211B;
 }
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}

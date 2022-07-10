@@ -4,6 +4,6 @@
 
 @section('content')
 
-    <h3>Welcome to the dashboard </h3>
+    <h3>Welcome to the dashboard   {{ auth()->user()->username }}</h3>
 
 @endsection
