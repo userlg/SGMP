@@ -2,6 +2,8 @@
 
 ### This application allow all kind of user and companies manage all the task in any projects department, if you have a work team, maybe you wanna use it.
 
+![ logo1 ](public/assets/laravel.png)
+
 -----------
 
 # Requirements
