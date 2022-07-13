@@ -8,12 +8,13 @@ use Illuminate\Support\Facades\Session;
 
 class LogoutController extends Controller
 {
-    public function logout(){
+    public function logout()
+    {
         //----This method allow the logout session
-       Session::flush();
+        Session::flush();
 
-       Auth::logout();
+        Auth::logout();
 
-       return redirect()->to('home');
+        return redirect()->to('home');
     }
 }

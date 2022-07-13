@@ -4,7 +4,7 @@
 @include('partials.header')
 
 <body>
-@include('partials.navbar')
+    @include('partials.navbar')
     <div class='main'>
         @yield('content')
     </div>

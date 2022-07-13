@@ -6,7 +6,7 @@
 
     <h2>Welcome the home view</h2>
     @auth
-        <p>Usted esta autenticado -- Bienvenido  {{ auth()->user()->username }}</p>
+        <p>Usted esta autenticado -- Bienvenido {{ auth()->user()->username }}</p>
     @endauth
 
     @guest
