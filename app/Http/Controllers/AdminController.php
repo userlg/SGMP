@@ -11,11 +11,8 @@ class AdminController extends Controller
 
     public function show(Request $request)
     {
-        
-
         $message = 'Testing compact method with laravel';
 
-       // return view('admin.dashboard',['message' => $message]);
-       return view('admin.dashboard',compact('message'));
+        return view('admin.dashboard', compact('message'));
     }
 }
