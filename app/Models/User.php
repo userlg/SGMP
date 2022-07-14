@@ -24,7 +24,7 @@ class User extends Authenticatable
     public function enterprise()
     {
         //-----Relationship one to one
-        return $this->hasMany(Enterprise::class);
+        return $this->hasOne(Enterprise::class);
     }
 
 

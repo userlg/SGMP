@@ -15,7 +15,7 @@ class RegisterController extends Controller
     //This controller allow all the logic for register operations
     public function show()
     {
-        if (Auth::check()){
+        if (Auth::check()) {
             return redirect('dashboard');
         }
         return view('auth.register');
@@ -28,7 +28,5 @@ class RegisterController extends Controller
         $message = 'user registered correctly';
 
         return view('auth.login')->with(['message' => $message]);
-
-        //return view('admin.dashboard')->with(['message' => $message]);
     }
 }

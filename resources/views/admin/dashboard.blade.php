@@ -9,5 +9,8 @@
     @if ($message)
         {{ $message }}
     @endif
+    @if ($company)
+        {{ $company->type }}
+    @endif
 
 @endsection
