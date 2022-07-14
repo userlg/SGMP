@@ -17,10 +17,16 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string('name')->nullable()->unique();
-            $table->string('description')->nullable();
+            $table->text('description')->nullable();
             $table->string('type')->nullable();
             $table->string('email')->unique();
             $table->string('address')->nullable();
+            $table->unsignedBigInteger('user_id')->unique();
+            $table->foreign('user_id')
+            ->references('id')
+            ->on('users')
+            ->onDelete('cascade')
+            ->unique();
         });
     }
 

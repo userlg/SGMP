@@ -4,10 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Models\User;
+
 class AdminController extends Controller
 {
     
     public function show(){
-        return view('admin.dashboard');
+        $enterprise =  User::find(1)->enterprise;
+        //return view('admin.dashboard');
+        return $enterprise;
     }
 }
