@@ -21,12 +21,16 @@ return new class extends Migration
             $table->string('type')->nullable();
             $table->string('email')->unique();
             $table->string('address')->nullable();
+
+            //--------Creation of hte foreignKey
             $table->unsignedBigInteger('user_id')->unique();
-            $table->foreign('user_id')
-            ->references('id')
-            ->on('users')
-            ->onDelete('cascade')
-            ->unique();
+            $table->foreignId('user_id')
+                ->constrained()
+                ->references('id')
+                ->on('users')
+                ->onUpdate('cascade')
+                ->onDelete('cascade')
+                ->unique();
         });
     }
 
