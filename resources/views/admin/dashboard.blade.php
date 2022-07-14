@@ -4,12 +4,10 @@
 
 @section('content')
 
-    <h3>Welcome to the dashboard {{ auth()->user()->username }}</h3>
-
-    @if (User::find(user()->id)->enterprise)
-        <p>Empresa Registrada</p>
-    @else
-    <p>Usted No tiene empresas registras</p>
+    <h3 class="text-center my-3">Welcome to the dashboard {{ auth()->user()->username }}</h3>
+    
+    @if ($message)
+        {{ $message }}
     @endif
 
 @endsection

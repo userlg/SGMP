@@ -8,10 +8,14 @@ use App\Models\User;
 
 class AdminController extends Controller
 {
-    
-    public function show(){
-        $enterprise =  User::find(2)->enterprise;
-        //return view('admin.dashboard');
-        return $enterprise;
+
+    public function show(Request $request)
+    {
+        
+
+        $message = 'Testing compact method with laravel';
+
+       // return view('admin.dashboard',['message' => $message]);
+       return view('admin.dashboard',compact('message'));
     }
 }

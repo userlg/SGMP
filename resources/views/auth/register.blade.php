@@ -4,7 +4,7 @@
 
 @section('content')
 
-<h3>Register Form</h3>
+<h3 class="text-center my-3">Register Form</h3>
 
 <form action="/register" method="POST" class="d-flex mx-auto flex-column col-8 gap-2 my-2 justify-content-center">
     @csrf

@@ -4,7 +4,11 @@
 
 @section('content')
 
-    <h3>Login Form</h3>
+    @if ($message)
+        <p>{{ $message }}</p>
+    @endif
+
+    <h3 class="text-center my-3">Login Form</h3>
 
     <form action="/login" method="POST" class="d-flex mx-auto flex-column col-8 gap-2 my-2 justify-content-center">
         @csrf
